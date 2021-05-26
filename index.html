@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <!-- Bootstrap CSS Einbindung -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <!-- Internes CSS Einbindung -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Externe Chart Einbindung -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+  <!-- Bootstrap JS Einbindung -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <!-- Facebook SDK Einbindung -->
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Data Visualization</title>
+</head>
+
+<body>
+
+  <h1 class="title-1">Facebook Data</h1>
+  <h1 class="title-2">Visualizer</h1>
+  <p>V1.0</p>
+
+  <p class="description">Login with your Facebook Account and start analyzing your data.</p>
+
+  <!-- Darkmode Toggle -->
+  <label class="switch">
+    <input onclick="myFunction()" type="checkbox">
+    <span class="slider round"></span>
+    <p class="dark-mode-label">Dark Mode</p>
+  </label>
+    
+
+  <!-- Filter Dropdown -->
+  <div class="filter-dropdown">
+    <select name="" class="form-control" id="filter">
+      <option value="">Filter</option>
+      <option value="last_7d">Last 7 days</option>
+      <option value="this_month">This month</option>
+      <option value="this_year">This year</option>
+    </select>
+  </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col section1">
+        <h2><span>Amount Spent</span></h2>
+        <p id="currency"></p>
+        <p class="value" id="amount">n/a</p>
+      </div>
+      <div class="col section2">
+        <h2><span>Impressions</span></h2>
+        <p class="value" id="impression">n/a</p>
+      </div>
+      <div class="col section3">
+        <h2><span>Clicks</span></h2>
+        <p class="value" id="clicks">n/a</p>
+      </div>
+    </div>
+  <!-- Amount Spent Curve -->
+    <div class="row">
+      <div class="col section4">
+        <h2><span>Amount Spent Curve</span></h2>
+        <div id="chart"></div>
+        <div>
+          <button id="next" style="visibility: hidden;">Show more data</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Internes JS Einbindung-->
+  <script src="js/facebook_integration.js"></script>
+  <script src="js/darkmode_toggle.js"></script>
+  <!-- Externe Chart Einbindung -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+</body>
+</html>

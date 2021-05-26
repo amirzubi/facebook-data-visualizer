@@ -1,0 +1,291 @@
+/* ########################## Allgemein ########################## */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  background: #ffffff;
+  padding: 50px;
+}
+
+/* ########################## Filter ########################## */
+.filter-dropdown {
+  width: 10% !important;
+}
+
+/* ########################## Toggle ########################## */
+/* Box um den Toggle */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  top: 50px;
+  right: 50px;
+}
+
+p.dark-mode-label {
+  margin-top: 15px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+/* Die Standart-Checkbox verstecken */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Der Toggle */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #544cf2;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #544cf2;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider:before {
+  background-image: url("/img/moon.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* ########################## Schriften ########################## */
+
+h1 {
+  font-size: 40px;
+}
+
+h1.title-1 {
+  font-weight: 500;
+  margin-bottom: 0px;
+  color: #544cf2;
+}
+
+h1.title-2 {
+  background: -webkit-linear-gradient(#d93cef, #544cf2) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: border-box;
+  font-weight: 700 !important;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+h2 span {
+  background: linear-gradient(to right, #d93cef 0%, #544cf2 100%);
+  padding: 3px 10px 3px 10px;
+  border-radius: 50px;
+}
+
+p.value {
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+}
+
+p.description {
+  font-size: 20px;
+  color: #1b1c1f;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/* ########################## Reihe ########################## */
+.row {
+  margin-top: 37.5px;
+}
+
+/* ########################## Spalte ########################## */
+.col {
+  padding: 50px;
+  border-radius: 12px;
+}
+
+.col p {
+  color: #1b1c1f;
+}
+
+/* ########################## Sektionen ########################## */
+.section1 {
+  background-color: #eaeaea;
+  margin-right: 25px;
+}
+
+.section1 p {
+  display: inline-block !important;
+}
+
+.section1 p#currency {
+  font-size: 25px !important;
+  padding-right: 5px;
+}
+
+.section2 {
+  background-color: #eaeaea;
+  margin-right: 12.5px;
+  margin-left: 12.5px;
+}
+
+.section3 {
+  background-color: #eaeaea;
+  margin-left: 25px;
+}
+
+.section4 {
+  background-color: #eaeaea;
+}
+
+/* ########################## Chart ########################## */
+/* "Show more data"-Button */
+#next {
+  background: #544cf2;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 14px 26px;
+  margin: 10px 0;
+  border-radius: 12px;
+}
+
+/* Chart */
+#chart {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+#chart text {
+  fill: #1b1c1f !important;
+}
+
+/* ########################## Dark Mode ########################## */
+.dark-mode {
+  background-color: #1b1c1f;
+}
+
+.dark-mode p {
+  color: #ffffff;
+}
+
+.dark-mode p.description {
+  color: #ffffff;
+}
+
+.dark-mode .section1 {
+  background-color: #27273a;
+}
+
+.dark-mode .section2 {
+  background-color: #14264b;
+}
+
+.dark-mode .section3 {
+  background-color: #2b144b;
+}
+
+.dark-mode .section4 {
+  background-color: #27273a;
+}
+
+.dark-mode .col p {
+  color: #ffffff;
+}
+
+.dark-mode #chart text {
+  fill: #ffffff !important;
+}
+
+/* ########################## Anpassung für Tablets ########################## */
+@media only screen and (max-width: 1280px) {
+  .filter-dropdown {
+    width: 100% !important;
+  }
+}
+/* ########################## Anpassung für Smartphones ########################## */
+@media only screen and (max-width: 768px) {
+  body {
+    padding: 20px 20px;
+  }
+
+  .filter-dropdown {
+    margin-bottom: 15px !important;
+  }
+
+  .container-fluid {
+    padding: 0px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p.value {
+    font-size: 35px;
+  }
+  .row {
+    margin: 0;
+  }
+  .col {
+    padding: 20px;
+    margin: 10px 0;
+    flex-basis: auto;
+  }
+
+  .dropdown-toggle {
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+
+  .switch {
+    top: 20px;
+    right: 20px;
+  }
+}
