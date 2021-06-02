@@ -25,3 +25,9 @@ following
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+## References
+
+Facebook Business-Hilfebereich (Hrsg.). (2020, 14. Dezembera). Ausgegebener Betrag | Facebook Business-Hilfebereich. Zugriff am 14.12.2020. Verfügbar unter: https://www.facebook.com/business/help/1406571646230212
+Facebook Business-Hilfebereich (Hrsg.). (2020, 14. Dezemberb). Impressionen | Facebook Business-Hilfebereich. Zugriff am 14.12.2020. Verfügbar unter: https://www.facebook.com/business/help/675615482516035
+Facebook Business-Hilfebereich (Hrsg.). (2020, 14. Dezemberc). Klicks (alle) | Facebook Business-Hilfebereich. Zugriff am 14.12.2020. Verfügbar unter: https://www.facebook.com/business/help/787506997938504
