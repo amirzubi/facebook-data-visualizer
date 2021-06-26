@@ -59,9 +59,9 @@ window.fbAsyncInit = function () {
       FB.api('/me/adaccounts', function (response) {
         // 1. https://developers.facebook.com/tools/explorer/?method=GET&path=me%2Fadaccounts&version=v9.0
         // 2. Rechte vergeben
-        // 3. Gewünschter Ad Account auswählen, welcher die Date enthält
-        // 4. Nummer dann anpassen
-        act_id = response.data[3].id
+        // 3. Gewünschter Ad Account auswählen, welcher die Daten enthält
+        // 4. Nummer dann anpassen response.data[Zahl hier anpassen]
+        act_id = response.data[1].id
         getData(act_id);
       });
     }
