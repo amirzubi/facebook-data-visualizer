@@ -26,6 +26,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
+## 4. Demo
+
+You can check a demo of the web application under the following URL: https://fdv.pazu.ch/
+
 ## References
 
 Facebook Business-Hilfebereich (Hrsg.). (2020, 14. Dezembera). Ausgegebener Betrag | Facebook Business-Hilfebereich. Zugriff am 14.12.2020. Verfügbar unter: https://www.facebook.com/business/help/1406571646230212
