@@ -1,3 +1,5 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/amirzubi/wordpress-code-snippets?color=00ae99)
+
 # Facebook Data Visualizer
 
 The Facebook Data Visualizer enables the logged-in user to visualize data through the Graph API and the account ID of the Facebook ad manager. The following Facebook data is displayed: Amount Spent, Impressions and Clicks. These key figures are obtained from Facebook and output and graphically displayed on the OnePage application. In addition, the drop-down function offers the option of displaying the data in the desired time span.
