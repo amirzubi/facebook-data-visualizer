@@ -1,4 +1,4 @@
-![GitHub last commit](https://img.shields.io/github/last-commit/amirzubi/wordpress-code-snippets?color=00ae99)
+![GitHub last commit](https://img.shields.io/github/last-commit/amirzubi/facebook-data-visualizer?color=00ae99)
 
 # Facebook Data Visualizer
 
